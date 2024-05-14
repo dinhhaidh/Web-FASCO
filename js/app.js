@@ -152,17 +152,17 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '60px',
-//     duration: 2500,
-//     delay: 400,
-// })
-// sr.reveal(`.home__image, .container-fluid, .home__data img, .follow__title, .new__title `) 
-// sr.reveal(`.home__data, .review-main, .high__data, .sign__images, .subscribe__button-link, .footer__span  `,{origin: 'bottom'})
-// sr.reveal(`.deals__card, .new__text, .new__button, .new__card, .follow__images `,{interval: 100}) 
-// sr.reveal(`.home__img, .packages__main, .follow__desc, .subscribe__img, .footer__data,.deals__description`,{origin: 'right'})
-// sr.reveal(`.home__image, .deals__data ,.packages__image, .subscribe__image,.subscribe__form, .footer__title`,{origin: 'left'})
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+sr.reveal(`.home__image, .container-fluid, .home__data img, .follow__title, .new__title `) 
+sr.reveal(`.home__data, .review-main, .high__data, .sign__images, .subscribe__button-link, .footer__span  `,{origin: 'bottom'})
+sr.reveal(`.deals__card, .new__text, .new__button, .new__card, .follow__images `,{interval: 100}) 
+sr.reveal(`.home__img, .packages__main, .follow__desc, .subscribe__img, .footer__data,.deals__description`,{origin: 'right'})
+sr.reveal(`.home__image, .deals__data ,.packages__image, .subscribe__image,.subscribe__form, .footer__title`,{origin: 'left'})
 
 
 
