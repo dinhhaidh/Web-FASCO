@@ -1,0 +1,303 @@
+.sign{
+    position: relative;
+    // min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+    overflow: hidden;
+    padding: 120px 0 60px;
+    &__main{
+        margin-inline: 1rem;
+    }
+    &__images{
+        position: relative;
+        // width: 1300px;
+        overflow: hidden;
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(1,max-content);
+        column-gap: 3rem;
+        padding: 3rem 3rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__data{
+        width: 350px;
+        color:black;
+        position: relative;
+    }
+    &__star {
+        display:flex;
+        align-items: center;
+        width: 95px;
+        height: 19px;
+    }
+    &__brick-link{
+        position: absolute;
+        top: 42%;
+        width: 140px;
+        background-color: #484848;
+        height: 1px;
+    }
+    &__brick{
+        position: absolute;
+        top: 50%;
+        width: 230px;
+        background-color: #484848;
+        height: 1px;
+    }
+    &__star i{
+        color: #fca120;
+        font-size: 1.2rem;
+    }
+    &__title{
+        margin-top: 3rem;
+        font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+        margin-bottom: 1rem;
+        font-weight: 400;
+        font-family: "Volkhov", serif;
+    }
+    
+    &__desc{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 263px;
+        height: 263px;
+    }
+    .swiper__article {
+        background-position: center;
+        background-size: cover;
+        width: 760px;
+        // height: 400px;
+        background-color: #fff;
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    .swiper-3d .swiper-slide-shadow-left, 
+    .swiper-3d .swiper-slide-shadow-right {
+        background-image: none;
+    }
+    .arrow-left,
+    .arrow-right{
+        color: #fff;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+        content: "";
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        bottom: 0 !important;
+        font-size: 2rem;
+        padding: 24px 24px;
+        background-color: #fff;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        top: 95% !important;
+    }
+    .swiper-button-prev{
+        left: 46%;
+        color: #B6B6B6;
+    }
+    .swiper-button-next{
+        left: 51.5%;
+        color: #000;
+    }
+    .swiper-button-prev i, .swiper-button-next i {
+        font-size: 1.5rem;
+    }
+    .mySwiper{
+        padding: 100px 0 100px;
+    }
+    // &__heading{
+    //     display: block;
+    // }
+    &__description{
+        margin-bottom: 0;
+    }
+    &__descs{
+        margin-bottom: 0px;
+    }
+   
+    @media screen and (max-width: 374.98px) {
+        flex-direction: column;
+        .container{
+            margin-inline: 1rem;
+        }
+        &__content{
+            grid-template-columns: repeat(1, max-content);
+            padding: 3rem 2rem;
+        }
+        .swiper__article {
+            width: 256px;
+        }
+        .swiper-slide img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        &__data {
+            width: 200px;
+            padding: 20px 0 0;
+        }
+        &__brick {
+            top: 49%;
+            width: 140px;
+        }
+        .mySwiper {
+            padding: 30px 0 60px;
+        }
+        .swiper-button-prev {
+            left: 43%;
+        }
+    }
+    
+    @media screen and (min-width: 375px) {
+        flex-direction: column;
+        &__content{
+            padding: 3rem 2.5rem;
+        }
+        padding: 70px 0 10px;
+        .swiper__article {
+            width: 256px;
+        }
+        .swiper-slide img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        &__data {
+            width: 200px;
+        }
+        &__brick {
+            top: 50%;
+            width: 140px;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            top: 89% !important;
+        }
+        .swiper-button-prev {
+            left: 45%;
+            color: #B6B6B6;
+        }
+        .mySwiper {
+            padding: 30px 0 100px;
+        }
+        
+    }
+
+    @media screen and (min-width: 460px) {
+        .swiper__article {
+            width: 300px;
+        }
+        &__container{
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 575px) {
+        &__container{
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        padding: 70px 0 30px;
+        &__container {
+            margin: 0 auto;
+        }
+        &__content{
+            grid-template-columns: repeat(2, max-content);
+        }
+        .swiper__article {
+            width: 660px;
+        }
+        &__data {
+            width: 316px;
+        }
+        &__title {
+            margin: 0.5rem 0;
+        }
+        &__desc {
+            margin-bottom: 2rem;
+        }
+        &__description {
+            margin-bottom: 0px;
+        }
+        .swiper-slide img {
+            width: 220px;
+            height: 220px;
+        }
+        &__brick-link {
+            top: 40%;
+        }
+        &__stars {
+            margin-bottom: 1rem;
+        }
+        .mySwiper {
+            padding: 100px 0 100px;
+        }
+        .swiper-button-prev {
+            left: 46.5%;
+        }
+    }
+    
+    @media screen and (min-width: 1150px) {
+        padding: 100px 0 30px;
+
+    }
+    @media screen and (min-width: 1280px) {
+        .swiper__article {
+            background-position: center;
+            background-size: cover;
+            width: 748px;
+            background-color: #fff;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

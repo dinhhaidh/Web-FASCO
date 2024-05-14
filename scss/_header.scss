@@ -1,0 +1,13 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+}
+
+// shadow-header
+.shadow-header {
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, .1);
+}

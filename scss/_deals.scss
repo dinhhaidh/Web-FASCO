@@ -1,0 +1,345 @@
+.deals{
+    padding: 70px 0 60px;
+    background-color: #fafafa;
+
+    &__container{
+        row-gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__data{
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__data-main {
+        position: relative;
+    }
+    &__images{
+        position: relative;
+    }
+    &__title{
+        font-size: var(--h1-font-size);
+        font-weight: 400;
+        font-family: var(--volkhov);
+        text-align: center;
+    }
+    &__description{
+        font-size: var(--h5-font-size);
+        margin-bottom: 40px;
+        color: var(--gray8a);
+        font-weight: 400;
+        font-family: var(--body-font);
+
+    }
+    &__button{
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    &__card-main{
+        margin-top: 5px;
+        margin-bottom: 0.75rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 44px;
+        & h4{
+            font-size: var(--h3-font-size);
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    &__days{
+        background-color: #fff;
+        box-shadow: 
+        0px 0px 4px rgba(0, 0, 0, 0.1), 
+        0px 0px 4px rgba(0, 0, 0, 0.1) inset, 
+        0px 0px 4px rgba(0, 0, 0, 0.1), 
+        0px 0px 4px rgba(0, 0, 0, 0.1); 
+        border-radius: 4px;
+        padding: 8px;
+        & img{
+            width: 30px;
+            height: 30px;
+        }
+        
+    }
+    &__subtitle{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 2.5rem;
+        margin-top: 30px;
+        margin-bottom: 0.7rem;
+        font-family: var(--body-font);
+        font-weight: 500;
+    }
+ 
+    &__card{
+        position: relative;
+
+    }
+    &__card-content{
+        position: absolute;
+        bottom: 1.2rem;
+        left: 1.2rem;
+        background-color: #fff;
+        padding: 1.5rem 1.5rem 1.5rem 1.2rem;
+    }
+
+    &__card__price{
+        position: relative;
+        display: flex;
+        column-gap: 2.25rem;
+        & div{
+            position: absolute;
+            width: 25px;
+            height: 1px;
+            background-color: #000;
+            top: 50%;
+            right: 63%;
+        }
+    }
+    
+    &__card {
+        scale: .8;
+        transition: scale .4s;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media screen and (max-width: 320px) {
+        &__container{
+            margin-inline: 1rem;
+        }
+        &__title{
+            margin-bottom: 1rem;
+        }
+        .swiper-pagination-bullets {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 320px) {
+        padding: 70px 0 70px;
+        &__title{
+            margin-bottom: 1rem;
+        }
+        .swiper-pagination-bullets {
+            display: none;
+        }
+        
+    }
+    @media screen and (min-width: 460px) {
+        padding: 70px 0 70px;
+        &__title{
+            margin-bottom: 1rem;
+        }
+        &__data{
+            width: 370px;
+        }
+        &__description{
+            width: 70%;
+            margin: 0 auto 2.5rem;
+        }
+        
+    }
+    @media screen and (min-width: 768px) {
+        padding: 100px 0 80px;
+        &__images{
+            width: 500px;
+            margin: 0 auto;
+        }
+        &__button{
+            margin: 0 auto 0 auto !important;
+        }
+        
+        &__subtitle{
+            margin-bottom: 1rem;
+        }
+        &__data{
+            text-align: center;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width: 1023px) {
+        &__container{
+            column-gap: 5rem;
+            flex-direction: row;
+            align-items: center;
+        }
+        &__description{
+            width: unset;
+        }
+        &__button{
+            margin: 0px !important;
+        }
+        
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            left: 1.5rem;
+        }
+        .swiper-button-next {
+            position: absolute;
+            bottom: 0;
+            left: -3rem;
+            top: unset;
+        }
+        .swiper-button-prev{
+            bottom: 0;
+            left: -6rem;
+            top: unset;
+        }
+        &__data,
+        &__title{
+            text-align: initial;
+        }
+        
+        &__subtitle,
+        &__content,
+        &__card-main{
+            justify-content: initial;
+        }
+        .swiper-pagination-bullets {
+            display: block;
+        }
+        .deals__data {
+            margin: 0 0;
+        }
+        &__data-main{
+            transform: translateX(39px);
+        }
+    }
+
+
+    @media screen and (min-width: 1150px) {
+        &__card{
+            scale: 0.9;
+        }
+        &__data{
+            width: 444px;
+        }
+        &__title{
+            width: 444px;
+        }
+        &__data-main{
+            transform: translateX(160px);
+        }
+        &__images{
+            width: 625px;
+            margin: 0px;
+            position: relative;
+        }
+        &__container{
+            column-gap: 0rem;
+        }
+        .card__article {
+            height: 386px;
+            width: 300px;
+        }
+        .swiper-button-prev {
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 1px 6px 2px #e4e4e4;
+        }
+        .swiper-button-next {
+            position: absolute;
+            bottom: 0;
+            left: -3.5rem;
+            box-shadow: 0 1px 6px 2px #e4e4e4;
+        }
+        .swiper-button-prev {
+            left: -7rem;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        &__data-main{
+            transform: translateX(114px);
+        }
+        &__images{
+            width: 830px;
+        }
+        .card__article {
+            height: 486px;
+            width: 404px;
+        }
+    }
+        
+}
+.deals .swiper-slide-active, .deals .swiper-slide-duplicate-active {
+    scale: 1;
+    margin-top: 24px;
+    transition: scale .4s;
+
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: "";
+}
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.swiper-button-prev i,
+.swiper-button-next i{
+    font-size: 1.5rem;
+    
+}
+.swiper-button-next i{
+    color: #000;
+}
+.swiper-button-prev i{
+    color: #b6b6b6;
+}
+.deals .swiper-pagination-bullets {
+    bottom: 0;
+}
+.deals .swiper-pagination-bullet {
+    position: relative;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    transition: background-color .3s, opacity .3s;
+    // background-color: #B6B6B6;
+    &::after{
+        margin: 25px;
+    }
+    
+}
+.deals .swiper-pagination-bullet-active{
+    position: relative;
+    background-color: #000;
+    margin: 10px;
+    &::before{
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: -16px;
+        right: -16.5px;
+        border-radius: 50%;
+        margin: 10px;
+        border: 1px solid #000;
+        // z-index: -1;
+    }
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px);
+}
