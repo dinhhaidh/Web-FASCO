@@ -141,23 +141,45 @@
     @media screen and (min-width: 1023px) {
         &__container{
             flex-direction: row;
+        }
+        &__main{
             &::before{
                 content: "";
                 position: absolute;
                 background-color: #DADADA;
                 right: 0;
-                width: 50%;
+                width: 63%;
                 height: 100%;
                 top: 0;
+            }
+        }
+        &__bg{
+            // position: relative;
+            &:after {
+                content: "";
+                width: 2px;
+                height: 111%;
+                background: black;
+                display: block;
+                position: absolute;
+                top: 50%;
+                // left: 43%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                rotate: 0deg;
+                z-index: 3;
             }
         }
         &__image{
             width: 50%;
             // width: 60%;
+            z-index: 2;
         }
         &__data{
             margin: 0 auto;
             text-align: initial;
+            position: relative;
+            z-index: 3;
         }
         &__content-warpper {
             justify-content: initial;
@@ -170,26 +192,24 @@
             width: 80%;
             margin: 40px 0 40px 40px;
         }
-        &__image:after {
-            content: "";
-            width: 2px;
-            height: 100%;
-            background: black;
-            position: absolute;
-            display: block;
-            top: 0rem;
-            right: 0%;
-            rotate: 0deg;
-        }
+        // &__image:after {
+        //     content: "";
+        //     width: 2px;
+        //     height: 100%;
+        //     background: black;
+        //     position: absolute;
+        //     display: block;
+        //     top: 0rem;
+        //     right: 0%;
+        //     rotate: 0deg;
+        // }
     }
     
     @media screen and (min-width: 1150px) {
         padding-top: 70px;
         &__data{
-            margin: 50px 0 50px 0px;
-            text-align: initial;
             // width: 515px;
-            position: relative;
+            margin: 50px 0 50px 0px;
             width: 81%;
         }
         &__image {
@@ -198,11 +218,11 @@
             img {
                 object-position: -338px;
             }
-            &:after {
-                height: 105%;
-                top: -0.8rem;
-                right: 5.5rem;
-                rotate: 18.2deg;
+        }
+        &__bg{
+            &::after{
+                left: 39%;
+                rotate: 18deg;
             }
         }
         &__descs {
@@ -223,19 +243,26 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: -97px;
+            // object-position: -97px;
+            object-position: -98px;
         }
         &__image {
             width: 56.4%;
-            &:after {
-                top: -0.8rem;
-                rotate: 18.2deg;
-                right: 5.3rem;
-                rotate: 18deg;
-            }
+            // &:after {
+            //     top: -0.8rem;
+            //     rotate: 18.2deg;
+            //     right: 5.3rem;
+            //     rotate: 18deg;
+            // }
         }
         &__data{
             width: 497px;
+        }
+        &__bg{
+            &::after{
+                left: 44.7%;
+
+            }
         }
 
     }

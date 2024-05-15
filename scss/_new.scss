@@ -143,7 +143,7 @@
     @media screen and (min-width: 768px) {
         &__content{
             gap: 2rem;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         }
 
         &__button{
@@ -168,6 +168,9 @@
             text-align: center;
             margin: 0 auto 60px
         }
+        &__content{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
         
 
     }
@@ -187,7 +190,7 @@
         }
 
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1350px) {
         &__content{
             grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
             gap: 3.5rem;

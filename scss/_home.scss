@@ -311,6 +311,11 @@
             column-gap: 2.5rem;
         }
     }
+    @media screen and (min-width: 1280px) {
+        .home__content {
+            column-gap: 4.81rem;
+        }
+    }
     
     
 }
