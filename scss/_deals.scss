@@ -218,11 +218,16 @@
             margin: 0 0;
         }
         &__data-main{
-            transform: translateX(39px);
+            transform: translateX(24px);
         }
     }
 
 
+    @media screen and (min-width: 1100px) {
+        &__data-main {
+            transform: translateX(30px);
+        }
+    }
     @media screen and (min-width: 1150px) {
         &__card{
             scale: 0.9;
@@ -234,7 +239,8 @@
             width: 444px;
         }
         &__data-main{
-            transform: translateX(160px);
+            transform: translateX(37px);
+
         }
         &__images{
             width: 625px;
@@ -243,6 +249,7 @@
         }
         &__container{
             column-gap: 0rem;
+            justify-content: space-between;
         }
         .card__article {
             height: 386px;
@@ -265,14 +272,32 @@
     }
     @media screen and (min-width: 1280px) {
         &__data-main{
-            transform: translateX(114px);
+            transform: translateX(28px);
         }
         &__images{
-            width: 830px;
+            // width: 830px;
+            width: 816px;
         }
         .card__article {
             height: 486px;
             width: 404px;
+        }
+    }
+    @media screen and (min-width: 1350px){
+        &__images{
+            width: 830px;
+        }
+        &__data-main{
+            transform: translateX(77px);
+
+        }
+        &__data{
+            width: 444px;
+        }
+    }
+    @media screen and (min-width: 1450px){
+        &__data-main{
+            transform: translateX(123px);
         }
     }
         

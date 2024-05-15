@@ -176,13 +176,12 @@
             width: 120px;
             height: 15px;
         }
-     
+        
         &__heading{
             margin: -10px 0 -10px;
         }
 
     @media screen and (min-width: 460px) {
-        padding-bottom: 70px;
         &__content{
             grid-template-columns: repeat(3, max-content);
             column-gap: 1.5rem;
@@ -229,9 +228,6 @@
         }
         &__main{
             grid-template-columns: repeat(3, 1fr);
-            column-gap: 2rem;
-            row-gap: 2rem;
-            justify-content: center;
         }
         &__data img:last-child {
             margin-top: 0.5rem;
@@ -249,14 +245,8 @@
         }
     }
     @media screen and (min-width: 1023px) {
-        &__main {
-            grid-template-columns: repeat(3, 1fr);
-        }
         &__data img:nth-child(3) {
             width: 100%;
-        }
-        &__content{
-            grid-template-columns: repeat(5, max-content);
         }
         .home__content img:nth-child(1), .home .home__content img:nth-child(4) {
             width: 176px;
