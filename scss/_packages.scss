@@ -2,6 +2,7 @@
     padding-top: 50px;
     background-color: #fff;
     z-index: 1;
+    // overflow: hidden;
 
     &__container{
         position: relative;
@@ -141,8 +142,6 @@
     @media screen and (min-width: 1023px) {
         &__container{
             flex-direction: row;
-        }
-        &__main{
             &::before{
                 content: "";
                 position: absolute;
@@ -153,6 +152,8 @@
                 top: 0;
             }
         }
+    //    &__main{
+    //     } 
         &__bg{
             // position: relative;
             &:after {
