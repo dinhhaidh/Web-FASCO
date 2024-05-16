@@ -841,6 +841,9 @@ img {
   }
 }
 @media screen and (min-width: 1150px) {
+  .deals {
+    padding: 120px 0 120px;
+  }
   .deals__card {
     scale: 0.9;
   }
@@ -1147,9 +1150,12 @@ img {
   }
 }
 @media screen and (min-width: 1150px) {
+  .new {
+    padding: 120px 0 70px;
+  }
   .new__title {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
   }
   .new .wrapper__container {
     gap: 1.5rem;
@@ -1470,7 +1476,7 @@ img {
 
 .follow {
   padding: 50px 0 50px;
-  background-color: #fbfbfb;
+  background: linear-gradient(to bottom, #fbfbfb, #fff);
   overflow: hidden;
 }
 .follow__title {
@@ -1534,7 +1540,7 @@ img {
 }
 @media screen and (min-width: 1150px) {
   .follow {
-    padding: 70px 0 100px;
+    padding: 120px 0 100px;
   }
   .follow__title {
     width: 614px;

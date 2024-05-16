@@ -1,6 +1,6 @@
 .follow {
     padding: 50px 0 50px;
-    background-color: #fbfbfb;
+    background: linear-gradient(to bottom, #fbfbfb, #fff);
     overflow: hidden;
     &__title{
         font-size: var(--h1-font-size);
@@ -64,7 +64,7 @@
         
     }
     @media screen and (min-width: 1150px) {
-        padding: 70px 0 100px;
+        padding: 120px 0 100px;
         &__title{
             width: 614px;
         }
