@@ -1171,6 +1171,7 @@ img {
   .new__content {
     grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
     gap: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -1315,7 +1316,7 @@ img {
     width: 60%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1023px) {
   .packages__container {
     flex-direction: row;
   }
@@ -1324,14 +1325,14 @@ img {
     position: absolute;
     background-color: #DADADA;
     right: 0;
-    width: 50%;
+    width: 63%;
     height: 100%;
     top: 0;
   }
   .packages__bg:after {
     content: "";
     width: 2px;
-    height: 100%;
+    height: 111%;
     background: black;
     display: block;
     position: absolute;
@@ -1341,21 +1342,13 @@ img {
     rotate: 0deg;
     z-index: 3;
   }
-  .packages__data {
-    text-align: initial;
-    margin: 3rem 0px 3rem 3rem;
-    width: 81%;
-  }
-  .packages__image, .packages__main {
+  .packages__image {
     width: 50%;
+    z-index: 2;
   }
-  .packages__content-warpper {
-    justify-content: initial;
-  }
-}
-@media screen and (min-width: 1023px) {
   .packages__data {
     margin: 0 auto;
+    text-align: initial;
     position: relative;
     z-index: 3;
   }
@@ -1381,18 +1374,76 @@ img {
   }
   .packages__image {
     position: relative;
+    width: 55.3%;
+  }
+  .packages__image img {
+    -o-object-position: -338px;
+       object-position: -338px;
+  }
+  .packages__bg::after {
+    left: 39%;
+    rotate: 18deg;
   }
   .packages__descs {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
   }
+  .packages__container::before {
+    width: 60%;
+  }
   .packages__main {
-    width: 44.5%;
+    width: 40.5%;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 1280px) {
+  .packages__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -98px;
+       object-position: -98px;
+  }
+  .packages__image {
+    width: 67.4%;
+  }
   .packages__data {
-    width: 515px;
+    width: 497px;
+  }
+  .packages__bg::after {
+    left: 48.7%;
+  }
+}
+
+@media screen and (max-width: 1368px) {
+    .packages__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -182px;
+       object-position: -182px;
+  }
+}
+@media screen and (max-width: 1280px) { 
+  .packages__image {
+    width: 50%;
+  }
+  .packages__container::before {
+    width: 50%;
+  }
+  .packages__bg::after {
+    rotate: 0deg;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .packages__image {
+    width: 100%;
+  }
+  .packages__image img {
+    object-position: unset;
   }
 }
 
