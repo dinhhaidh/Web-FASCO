@@ -1328,23 +1328,24 @@ img {
     height: 100%;
     top: 0;
   }
-  .packages__bg:after {
-    content: "";
-    width: 2px;
+  .packages__bg {
     height: 100%;
-    background: black;
+    border: 1px solid #000;
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    rotate: 0deg;
-    z-index: 3;
+    z-index: 4;
   }
   .packages__data {
     text-align: initial;
-    margin: 3rem 0px 3rem 3rem;
+    margin: 40px 0 40px 40px;
     width: 81%;
+  }
+  .packages__main {
+    position: relative;
+    z-index: 5 !important;
   }
   .packages__image, .packages__main {
     width: 50%;
@@ -1356,8 +1357,6 @@ img {
 @media screen and (min-width: 1023px) {
   .packages__data {
     margin: 0 auto;
-    position: relative;
-    z-index: 3;
   }
   .packages__content-warpper {
     justify-content: initial;
@@ -1368,7 +1367,7 @@ img {
   }
   .packages__data {
     width: 80%;
-    margin: 40px 0 40px 40px;
+    margin: 60px 0 60px 60px;
   }
 }
 @media screen and (min-width: 1150px) {
@@ -1376,7 +1375,6 @@ img {
     padding-top: 70px;
   }
   .packages__data {
-    margin: 50px 0 50px 0px;
     width: 81%;
   }
   .packages__image {
@@ -1390,9 +1388,46 @@ img {
     width: 44.5%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1250px) {
   .packages__data {
     width: 515px;
+  }
+  .packages__gray {
+    position: absolute;
+    top: 50%;
+    left: 48.7%;
+    transform: translate(-50%, -50%);
+    width: 7%;
+    background-color: #DADADA;
+    z-index: 3;
+    rotate: 18deg;
+    height: 113%;
+  }
+  .packages__white {
+    position: absolute;
+    top: 50%;
+    left: 40.4%;
+    transform: translate(-50%, -50%);
+    width: 9.1%;
+    background-color: #F8F8F8;
+    z-index: 4;
+    rotate: 18deg;
+    height: 112%;
+  }
+  .packages__bg {
+    rotate: 18deg;
+    left: 45%;
+    height: 111%;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .packages__white {
+    left: 40.2%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .packages__white {
+    left: 40.3%;
   }
 }
 
